@@ -1,8 +1,31 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        eigeneListe();
+        eigeneListeMitInt();
+    }
+
+    public static void eigeneListeMitInt() {
+        ArrayList<Integer> list = new ArrayList<Integer>();
+
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(5);
+        list.add(4);
+        list.add(8);
+        list.add(10);
+
+        System.out.println(list);
+
+        // Element an Stelle 5 entfernen
+        // list.remove(5);
+
+        // Element mit Wert 5 entfernen
+        list.remove(Integer.valueOf(5));
+
+        System.out.println(list);
     }
 
     public static void eigeneListe() {
