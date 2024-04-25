@@ -3,7 +3,33 @@ import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        eigeneListeMitInt();
+        // beispielRekursion();
+        beispielIteration();
+    }
+
+    private static int fakultaet(int n) {
+        if (n == 0) {
+            return 1;
+        } else {
+            System.out.println("Ich bin gerade bei n: " + n);
+            return n * fakultaet(n - 1);
+        }
+    }
+
+    public static void beispielIteration() {
+        int n = 5;
+        int result = 1;
+        for (long i = 1; i <= n; i++) {
+            System.out.println("Ich bin gerade bei n: " + i);
+            result *= i;
+        }
+        System.out.println("Die Fakultät von " + n + " ist " + result);
+    }
+
+    public static void beispielRekursion() {
+        int n = 5;
+        int result = fakultaet(n);
+        System.out.println("Die Fakultät von " + n + " ist " + result);
     }
 
     public static void eigeneListeMitInt() {
