@@ -12,6 +12,17 @@ public class App {
         list.add(new Klausur(39, "3124822"));
         list.add(new Klausur(60, "2384723"));
 
+        // Auslesen: arr[0] wird zu: list.get(0)
+        // Schreiben: arr[0] = 3 wird zu: list.set(0, 3);
+
+        System.out.println("Die Punkte der ersten Klausur: " + list.get(0).getPunkte());
+
+        for (Klausur klausur : list) {
+            if (klausur.bestanden()) {
+                System.out.println("Hurra! " + klausur.getMatrikelNummer() + " hat bestanden!");
+            }
+        }
+
         System.out.println(list);
     }
 
