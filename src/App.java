@@ -2,6 +2,20 @@ import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        eigeneListe();
+    }
+
+    public static void eigeneListe() {
+        ArrayList<Klausur> list = new ArrayList<Klausur>();
+
+        list.add(new Klausur(50, "1234561"));
+        list.add(new Klausur(39, "3124822"));
+        list.add(new Klausur(60, "2384723"));
+
+        System.out.println(list);
+    }
+
+    public static void stringListe() {
 
         ArrayList<String> list = new ArrayList<String>();
 
